@@ -2,7 +2,8 @@
 .appVersion = "3180";
 DisplayStrings = (
 "/uni07CD.medi/space/uni07FD.wideopen/space/space/uni07CD",
-"/space/space/uni07FD/uni07FD.wideopen"
+"/space/space/uni07FD/uni07FD.wideopen",
+"/uni07CA.init"
 );
 classes = (
 {
@@ -786,13 +787,13 @@ subCategory = "Decimal Digit";
 {
 glyphname = uni07C1;
 production = uni07C1;
-lastChange = "2019-09-06 15:22:42 +0000";
+lastChange = "2023-05-05 10:32:55 +0000";
 layers = (
 {
 anchors = (
 {
 name = Anchor2;
-position = "{297, 796}";
+position = "{297, 795}";
 }
 );
 layerId = UUID0;
@@ -1280,13 +1281,13 @@ subCategory = Other;
 {
 glyphname = uni07CB;
 production = uni07CB;
-lastChange = "2019-09-06 15:22:42 +0000";
+lastChange = "2023-05-05 10:32:55 +0000";
 layers = (
 {
 anchors = (
 {
 name = Anchor2;
-position = "{332, 649}";
+position = "{332, 795}";
 },
 {
 name = Anchor4;
@@ -1403,13 +1404,13 @@ subCategory = Other;
 {
 glyphname = uni07CD;
 production = uni07CD;
-lastChange = "2023-05-05 10:17:28 +0000";
+lastChange = "2023-05-05 10:32:55 +0000";
 layers = (
 {
 anchors = (
 {
 name = Anchor2;
-position = "{312, 649}";
+position = "{312, 795}";
 },
 {
 name = Anchor4;
@@ -1452,13 +1453,13 @@ subCategory = Other;
 {
 glyphname = uni07CE;
 production = uni07CE;
-lastChange = "2019-09-06 15:22:42 +0000";
+lastChange = "2023-05-05 10:32:55 +0000";
 layers = (
 {
 anchors = (
 {
 name = Anchor2;
-position = "{292, 649}";
+position = "{292, 795}";
 },
 {
 name = Anchor4;
@@ -1510,13 +1511,13 @@ subCategory = Other;
 {
 glyphname = uni07CF;
 production = uni07CF;
-lastChange = "2019-09-06 15:22:42 +0000";
+lastChange = "2023-05-05 10:32:55 +0000";
 layers = (
 {
 anchors = (
 {
 name = Anchor2;
-position = "{244, 649}";
+position = "{244, 795}";
 },
 {
 name = Anchor4;
@@ -2051,13 +2052,13 @@ subCategory = Other;
 {
 glyphname = uni07D8;
 production = uni07D8;
-lastChange = "2019-09-06 15:22:42 +0000";
+lastChange = "2023-05-05 10:32:55 +0000";
 layers = (
 {
 anchors = (
 {
 name = Anchor2;
-position = "{371, 649}";
+position = "{371, 795}";
 },
 {
 name = Anchor4;
@@ -2255,13 +2256,13 @@ subCategory = Other;
 {
 glyphname = uni07DB;
 production = uni07DB;
-lastChange = "2019-09-06 15:22:42 +0000";
+lastChange = "2023-05-05 10:32:55 +0000";
 layers = (
 {
 anchors = (
 {
 name = Anchor2;
-position = "{351, 649}";
+position = "{351, 795}";
 },
 {
 name = Anchor4;
@@ -3168,13 +3169,13 @@ subCategory = Other;
 {
 glyphname = uni07E8;
 production = uni07E8;
-lastChange = "2019-09-06 15:22:42 +0000";
+lastChange = "2023-05-05 10:32:55 +0000";
 layers = (
 {
 anchors = (
 {
 name = Anchor2;
-position = "{292, 454}";
+position = "{292, 795}";
 },
 {
 name = Anchor4;
@@ -3239,13 +3240,13 @@ subCategory = Other;
 {
 glyphname = uni07E9;
 production = uni07E9;
-lastChange = "2019-09-06 15:22:42 +0000";
+lastChange = "2023-05-05 10:32:55 +0000";
 layers = (
 {
 anchors = (
 {
 name = Anchor2;
-position = "{292, 454}";
+position = "{292, 795}";
 },
 {
 name = Anchor4;
@@ -3322,13 +3323,13 @@ subCategory = Other;
 {
 glyphname = uni07EA;
 production = uni07EA;
-lastChange = "2019-09-06 15:22:42 +0000";
+lastChange = "2023-05-05 10:32:55 +0000";
 layers = (
 {
 anchors = (
 {
 name = Anchor2;
-position = "{195, 454}";
+position = "{195, 795}";
 },
 {
 name = Anchor4;
@@ -4358,13 +4359,13 @@ subCategory = Other;
 {
 glyphname = uni07CB.fina;
 production = uni07CB.fina;
-lastChange = "2019-09-06 15:22:42 +0000";
+lastChange = "2023-05-05 10:32:55 +0000";
 layers = (
 {
 anchors = (
 {
 name = Anchor2;
-position = "{332, 649}";
+position = "{332, 795}";
 },
 {
 name = Anchor4;
@@ -4437,13 +4438,13 @@ subCategory = Other;
 {
 glyphname = uni07CB.medi;
 production = uni07CB.medi;
-lastChange = "2019-09-06 15:22:42 +0000";
+lastChange = "2023-05-05 10:32:55 +0000";
 layers = (
 {
 anchors = (
 {
 name = Anchor2;
-position = "{332, 649}";
+position = "{332, 795}";
 },
 {
 name = Anchor4;
@@ -4528,13 +4529,13 @@ subCategory = Other;
 {
 glyphname = uni07CB.init;
 production = uni07CB.init;
-lastChange = "2019-09-06 15:22:42 +0000";
+lastChange = "2023-05-05 10:32:55 +0000";
 layers = (
 {
 anchors = (
 {
 name = Anchor2;
-position = "{332, 649}";
+position = "{332, 795}";
 },
 {
 name = Anchor4;
@@ -4756,7 +4757,7 @@ subCategory = Other;
 {
 glyphname = uni07CC.init;
 production = uni07CC.init;
-lastChange = "2019-09-06 15:22:42 +0000";
+lastChange = "2023-05-05 10:32:35 +0000";
 layers = (
 {
 anchors = (
@@ -4827,13 +4828,13 @@ subCategory = Other;
 {
 glyphname = uni07CD.fina;
 production = uni07CD.fina;
-lastChange = "2019-09-06 15:22:42 +0000";
+lastChange = "2023-05-05 10:32:55 +0000";
 layers = (
 {
 anchors = (
 {
 name = Anchor2;
-position = "{312, 649}";
+position = "{312, 795}";
 },
 {
 name = Anchor4;
@@ -4884,13 +4885,13 @@ subCategory = Other;
 {
 glyphname = uni07CD.medi;
 production = uni07CD.medi;
-lastChange = "2023-05-05 10:17:10 +0000";
+lastChange = "2023-05-05 10:32:55 +0000";
 layers = (
 {
 anchors = (
 {
 name = Anchor2;
-position = "{312, 649}";
+position = "{312, 795}";
 },
 {
 name = Anchor4;
@@ -4953,13 +4954,13 @@ subCategory = Other;
 {
 glyphname = uni07CD.init;
 production = uni07CD.init;
-lastChange = "2019-09-06 15:22:42 +0000";
+lastChange = "2023-05-05 10:32:55 +0000";
 layers = (
 {
 anchors = (
 {
 name = Anchor2;
-position = "{312, 649}";
+position = "{312, 795}";
 },
 {
 name = Anchor4;
@@ -5013,13 +5014,13 @@ subCategory = Other;
 {
 glyphname = uni07CE.fina;
 production = uni07CE.fina;
-lastChange = "2019-09-06 15:22:42 +0000";
+lastChange = "2023-05-05 10:32:55 +0000";
 layers = (
 {
 anchors = (
 {
 name = Anchor2;
-position = "{292, 649}";
+position = "{292, 795}";
 },
 {
 name = Anchor4;
@@ -5091,13 +5092,13 @@ subCategory = Other;
 {
 glyphname = uni07CE.medi;
 production = uni07CE.medi;
-lastChange = "2019-09-06 15:22:42 +0000";
+lastChange = "2023-05-05 10:32:55 +0000";
 layers = (
 {
 anchors = (
 {
 name = Anchor2;
-position = "{292, 649}";
+position = "{292, 795}";
 },
 {
 name = Anchor4;
@@ -5202,13 +5203,13 @@ subCategory = Other;
 {
 glyphname = uni07CE.init;
 production = uni07CE.init;
-lastChange = "2019-09-06 15:22:42 +0000";
+lastChange = "2023-05-05 10:32:55 +0000";
 layers = (
 {
 anchors = (
 {
 name = Anchor2;
-position = "{297, 649}";
+position = "{297, 795}";
 },
 {
 name = Anchor4;
@@ -5294,13 +5295,13 @@ subCategory = Other;
 {
 glyphname = uni07CF.fina;
 production = uni07CF.fina;
-lastChange = "2019-09-06 15:22:42 +0000";
+lastChange = "2023-05-05 10:32:55 +0000";
 layers = (
 {
 anchors = (
 {
 name = Anchor2;
-position = "{244, 649}";
+position = "{244, 795}";
 },
 {
 name = Anchor4;
@@ -5372,13 +5373,13 @@ subCategory = Other;
 {
 glyphname = uni07CF.medi;
 production = uni07CF.medi;
-lastChange = "2019-09-06 15:22:42 +0000";
+lastChange = "2023-05-05 10:32:55 +0000";
 layers = (
 {
 anchors = (
 {
 name = Anchor2;
-position = "{244, 649}";
+position = "{244, 795}";
 },
 {
 name = Anchor4;
@@ -5453,13 +5454,13 @@ subCategory = Other;
 {
 glyphname = uni07CF.init;
 production = uni07CF.init;
-lastChange = "2019-09-06 15:22:42 +0000";
+lastChange = "2023-05-05 10:32:55 +0000";
 layers = (
 {
 anchors = (
 {
 name = Anchor2;
-position = "{239, 649}";
+position = "{239, 795}";
 },
 {
 name = Anchor4;
@@ -7283,13 +7284,13 @@ subCategory = Other;
 {
 glyphname = uni07D8.fina;
 production = uni07D8.fina;
-lastChange = "2019-09-06 15:22:42 +0000";
+lastChange = "2023-05-05 10:32:55 +0000";
 layers = (
 {
 anchors = (
 {
 name = Anchor2;
-position = "{371, 649}";
+position = "{371, 795}";
 },
 {
 name = Anchor4;
@@ -7395,13 +7396,13 @@ subCategory = Other;
 {
 glyphname = uni07D8.medi;
 production = uni07D8.medi;
-lastChange = "2019-09-06 15:22:42 +0000";
+lastChange = "2023-05-05 10:32:55 +0000";
 layers = (
 {
 anchors = (
 {
 name = Anchor2;
-position = "{371, 649}";
+position = "{371, 795}";
 },
 {
 name = Anchor4;
@@ -7507,13 +7508,13 @@ subCategory = Other;
 {
 glyphname = uni07D8.init;
 production = uni07D8.init;
-lastChange = "2019-09-06 15:22:42 +0000";
+lastChange = "2023-05-05 10:32:55 +0000";
 layers = (
 {
 anchors = (
 {
 name = Anchor2;
-position = "{371, 649}";
+position = "{371, 795}";
 },
 {
 name = Anchor4;
@@ -8144,13 +8145,13 @@ subCategory = Other;
 {
 glyphname = uni07DB.fina;
 production = uni07DB.fina;
-lastChange = "2019-09-06 15:22:42 +0000";
+lastChange = "2023-05-05 10:32:55 +0000";
 layers = (
 {
 anchors = (
 {
 name = Anchor2;
-position = "{351, 649}";
+position = "{351, 795}";
 },
 {
 name = Anchor4;
@@ -8242,13 +8243,13 @@ subCategory = Other;
 {
 glyphname = uni07DB.medi;
 production = uni07DB.medi;
-lastChange = "2019-09-06 15:22:42 +0000";
+lastChange = "2023-05-05 10:32:55 +0000";
 layers = (
 {
 anchors = (
 {
 name = Anchor2;
-position = "{351, 649}";
+position = "{351, 795}";
 },
 {
 name = Anchor4;
@@ -8340,13 +8341,13 @@ subCategory = Other;
 {
 glyphname = uni07DB.init;
 production = uni07DB.init;
-lastChange = "2019-09-06 15:22:42 +0000";
+lastChange = "2023-05-05 10:32:55 +0000";
 layers = (
 {
 anchors = (
 {
 name = Anchor2;
-position = "{351, 649}";
+position = "{351, 795}";
 },
 {
 name = Anchor4;
@@ -11501,13 +11502,13 @@ subCategory = Other;
 {
 glyphname = uni07E8.fina;
 production = uni07E8.fina;
-lastChange = "2019-09-06 15:22:42 +0000";
+lastChange = "2023-05-05 10:32:55 +0000";
 layers = (
 {
 anchors = (
 {
 name = Anchor2;
-position = "{292, 454}";
+position = "{292, 795}";
 },
 {
 name = Anchor4;
@@ -11577,13 +11578,13 @@ subCategory = Other;
 {
 glyphname = uni07E8.medi;
 production = uni07E8.medi;
-lastChange = "2019-09-06 15:22:42 +0000";
+lastChange = "2023-05-05 10:32:55 +0000";
 layers = (
 {
 anchors = (
 {
 name = Anchor2;
-position = "{292, 454}";
+position = "{292, 795}";
 },
 {
 name = Anchor4;
@@ -11668,13 +11669,13 @@ subCategory = Other;
 {
 glyphname = uni07E8.init;
 production = uni07E8.init;
-lastChange = "2019-09-06 15:22:42 +0000";
+lastChange = "2023-05-05 10:32:55 +0000";
 layers = (
 {
 anchors = (
 {
 name = Anchor2;
-position = "{292, 454}";
+position = "{292, 795}";
 },
 {
 name = Anchor4;
@@ -11740,13 +11741,13 @@ subCategory = Other;
 {
 glyphname = uni07E9.fina;
 production = uni07E9.fina;
-lastChange = "2019-09-06 15:22:42 +0000";
+lastChange = "2023-05-05 10:32:55 +0000";
 layers = (
 {
 anchors = (
 {
 name = Anchor2;
-position = "{292, 454}";
+position = "{292, 795}";
 },
 {
 name = Anchor4;
@@ -11828,13 +11829,13 @@ subCategory = Other;
 {
 glyphname = uni07E9.medi;
 production = uni07E9.medi;
-lastChange = "2019-09-06 15:22:42 +0000";
+lastChange = "2023-05-05 10:32:55 +0000";
 layers = (
 {
 anchors = (
 {
 name = Anchor2;
-position = "{292, 454}";
+position = "{292, 795}";
 },
 {
 name = Anchor4;
@@ -11928,13 +11929,13 @@ subCategory = Other;
 {
 glyphname = uni07E9.init;
 production = uni07E9.init;
-lastChange = "2019-09-06 15:22:42 +0000";
+lastChange = "2023-05-05 10:32:55 +0000";
 layers = (
 {
 anchors = (
 {
 name = Anchor2;
-position = "{292, 454}";
+position = "{292, 795}";
 },
 {
 name = Anchor4;
@@ -12009,13 +12010,13 @@ subCategory = Other;
 {
 glyphname = uni07EA.fina;
 production = uni07EA.fina;
-lastChange = "2019-09-06 15:22:42 +0000";
+lastChange = "2023-05-05 10:32:55 +0000";
 layers = (
 {
 anchors = (
 {
 name = Anchor2;
-position = "{195, 454}";
+position = "{195, 795}";
 },
 {
 name = Anchor4;
@@ -12057,13 +12058,13 @@ subCategory = Other;
 {
 glyphname = uni07EA.medi;
 production = uni07EA.medi;
-lastChange = "2019-09-06 15:22:42 +0000";
+lastChange = "2023-05-05 10:32:55 +0000";
 layers = (
 {
 anchors = (
 {
 name = Anchor2;
-position = "{195, 454}";
+position = "{195, 795}";
 },
 {
 name = Anchor4;
@@ -12108,13 +12109,13 @@ subCategory = Other;
 {
 glyphname = uni07EA.init;
 production = uni07EA.init;
-lastChange = "2019-09-06 15:22:42 +0000";
+lastChange = "2023-05-05 10:32:55 +0000";
 layers = (
 {
 anchors = (
 {
 name = Anchor2;
-position = "{195, 454}";
+position = "{195, 795}";
 },
 {
 name = Anchor4;
@@ -12219,13 +12220,13 @@ subCategory = Nonspace;
 {
 glyphname = uni25CC;
 production = uni25CC;
-lastChange = "2019-09-06 15:22:42 +0000";
+lastChange = "2023-05-05 10:32:55 +0000";
 layers = (
 {
 anchors = (
 {
 name = Anchor2;
-position = "{297, 645}";
+position = "{297, 795}";
 },
 {
 name = Anchor4;
