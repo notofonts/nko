@@ -1,21 +1,37 @@
 {
-.appVersion = "3109";
+.appVersion = "3180";
+DisplayStrings = (
+"/uni07CD.medi/space/uni07FD.wideopen/space/space/uni07CD",
+"/space/space/uni07FD/uni07FD.wideopen"
+);
 classes = (
 {
+code = "uni07CA\012uni07CA.fina\012uni07CA.medi\012uni07EA.fina";
+name = narrow;
+},
+{
 code = "uni07CC uni07CC.fina uni07CC.medi uni07CE uni07CE.fina uni07CE.medi uni07CF uni07CF.fina uni07CF.medi uni07D1 uni07D5 uni07D5.fina uni07D5.medi uni07D6 uni07D6.fina uni07DC.fina uni07DE uni07DE.fina uni07DE.medi uni07DF uni07DF.fina uni07DF.medi uni07E0 uni07E2 uni07E2.fina uni07E2.medi uni07E3 uni07E3.fina uni07E3.medi uni07E4 uni07E4.fina uni07E4.medi uni07E5 uni07E5.fina uni07E5.medi uni07E6 uni07E6.fina uni07E6.medi uni07E7 uni07E7.fina uni07E7.medi uni07E8 uni07E8.fina uni07E8.medi uni07E9 uni07E9.fina uni07E9.medi uni25CC";
-name = class1;
+name = wide;
+},
+{
+code = "uni07CD\012uni07CD.fina\012uni07CD.medi";
+name = wideopen;
+},
+{
+code = "uni07C0\012uni07C1\012uni07C2\012uni07C3\012uni07C4\012uni07C5\012uni07C6\012uni07C7\012uni07C8\012uni07C9\012uni07CA\012uni07CB\012uni07CC\012uni07CD\012uni07CE\012uni07CF\012uni07D0\012uni07D1\012uni07D2\012uni07D3\012uni07D4\012uni07D5\012uni07D6\012uni07D7\012uni07D8\012uni07D9\012uni07DA\012uni07DB\012uni07DC\012uni07DD\012uni07DE\012uni07DF\012uni07E0\012uni07E1\012uni07E2\012uni07E3\012uni07E4\012uni07E5\012uni07E6\012uni07E7\012uni07E8\012uni07E9\012uni07EA\012";
+name = isolates;
 },
 {
 code = "uni07CB uni07CB.fina uni07CB.medi uni07D0 uni07D0.fina uni07D0.medi uni07D2 uni07D2.fina uni07D2.medi uni07DA uni07DA.fina uni07DA.medi uni07DB.fina uni07DB.medi uni07DC uni07DC.medi uni07E1 uni07E1.fina";
-name = class2;
+name = wider;
 },
 {
 code = "uni07D8 uni07D8.fina uni07D8.medi uni07DB uni07DD uni07DD.fina uni07DD.medi";
-name = class3;
+name = widest;
 },
 {
-code = "uni07FD uni07FD.narrow uni07FD.wide uni07FD.wideopen uni07FD.wider uni07FD.widest";
-name = markFilteringSet1;
+code = "uni07FD\012uni07FD.narrow\012uni07FD.wide\012uni07FD.wideopen\012uni07FD.wider\012uni07FD.widest\012";
+name = dantayalan;
 }
 );
 copyright = "Copyright 2022 The Noto Project Authors (https://github.com/notofonts/nko)";
@@ -238,6 +254,10 @@ value = (
 );
 },
 {
+name = "Use Typo Metrics";
+value = 1;
+},
+{
 name = description;
 value = "Designed by Monotype design team.";
 },
@@ -260,10 +280,6 @@ value = "Noto is a trademark of Google Inc.";
 {
 name = versionString;
 value = "Version 2.003";
-},
-{
-name = "Use Typo Metrics";
-value = 1;
 }
 );
 date = "2017-02-24 17:47:35 +0000";
@@ -274,19 +290,23 @@ disablesNiceNames = 1;
 familyName = "Noto Sans NKo";
 featurePrefixes = (
 {
-code = "languagesystem nko  dflt;\012";
+code = "languagesystem DFLT dflt;\012languagesystem nko  dflt;\012";
 name = Languagesystems;
+},
+{
+code = "# This madness produced with:\012#for glyphname in Glyphs.font.classes[\"isolates\"].code.split():\012#	glyph = Glyphs.font.glyphs[glyphname]\012#	anchor = glyph.layers[0].anchors[\"Anchor6\"]\012#	if not anchor:\012#		continue\012#	anchor_x = anchor.position.x\012#	# Which dantayalan?\012#	dantayalan = \"uni07FD\"\012#	for kind in [\"narrow\", \"wide\", \"wideopen\", \"wider\", \"widest\"]:\012#		if glyphname in Glyphs.font.classes[kind].code:\012#			dantayalan = \"uni07FD.\"+kind\012#	target = Glyphs.font.glyphs[dantayalan].layers[0].LSB\012#	kern = int(-(anchor_x + target) + 50)\012#	print(f\"pos {glyphname} <{kern} 0 {kern} 0>;\")\012lookup kern_dantayalan_left {\012pos uni07CA <68 0 68 0>;\012pos uni07CB <30 0 30 0>;\012pos uni07CC <90 0 90 0>;\012pos uni07CD <89 0 89 0>;\012pos uni07CE <13 0 13 0>;\012pos uni07CF <53 0 53 0>;\012pos uni07D0 <38 0 38 0>;\012pos uni07D1 <48 0 48 0>;\012pos uni07D2 <19 0 19 0>;\012pos uni07D3 <31 0 31 0>;\012pos uni07D4 <51 0 51 0>;\012pos uni07D5 <19 0 19 0>;\012pos uni07D6 <71 0 71 0>;\012pos uni07D7 <48 0 48 0>;\012pos uni07D8 <14 0 14 0>;\012pos uni07D9 <55 0 55 0>;\012pos uni07DA <35 0 35 0>;\012pos uni07DB <56 0 56 0>;\012pos uni07DC <72 0 72 0>;\012pos uni07DD <44 0 44 0>;\012pos uni07DE <42 0 42 0>;\012pos uni07DF <17 0 17 0>;\012pos uni07E0 <49 0 49 0>;\012pos uni07E1 <72 0 72 0>;\012pos uni07E2 <49 0 49 0>;\012pos uni07E3 <42 0 42 0>;\012pos uni07E4 <42 0 42 0>;\012pos uni07E5 <47 0 47 0>;\012pos uni07E6 <49 0 49 0>;\012pos uni07E7 <45 0 45 0>;\012pos uni07E8 <29 0 29 0>;\012pos uni07E9 <34 0 34 0>;\012pos uni07EA <5 0 5 0>;\012} kern_dantayalan_left;\012\012lookup kern_dantayalan_right {\012pos uni07CA <67 0 67 0>;\012pos uni07CB <30 0 30 0>;\012pos uni07CC <91 0 91 0>;\012pos uni07CD <18 0 18 0>;\012pos uni07CE <12 0 12 0>;\012pos uni07CF <14 0 14 0>;\012pos uni07D0 <37 0 37 0>;\012pos uni07D1 <48 0 48 0>;\012pos uni07D2 <16 0 16 0>;\012pos uni07D3 <50 0 50 0>;\012pos uni07D4 <30 0 30 0>;\012pos uni07D5 <35 0 35 0>;\012pos uni07D6 <60 0 60 0>;\012pos uni07D7 <75 0 75 0>;\012pos uni07D8 <14 0 14 0>;\012pos uni07D9 <54 0 54 0>;\012pos uni07DA <35 0 35 0>;\012pos uni07DB <56 0 56 0>;\012pos uni07DC <72 0 72 0>;\012pos uni07DD <43 0 43 0>;\012pos uni07DE <32 0 32 0>;\012pos uni07DF <23 0 23 0>;\012pos uni07E0 <48 0 48 0>;\012pos uni07E1 <72 0 72 0>;\012pos uni07E2 <28 0 28 0>;\012pos uni07E3 <32 0 32 0>;\012pos uni07E4 <32 0 32 0>;\012pos uni07E5 <46 0 46 0>;\012pos uni07E6 <48 0 48 0>;\012pos uni07E7 <44 0 44 0>;\012pos uni07E8 <136 0 136 0>;\012pos uni07E9 <131 0 131 0>;\012pos uni07EA <4 0 4 0>;\012} kern_dantayalan_right;\012";
+name = dantayalan_kerning;
 }
 );
 features = (
 {
-code = "    lookupflag UseMarkFilteringSet @markFilteringSet1;\012    sub [uni07CA uni07CA.fina uni07CA.medi uni07EA.fina] uni07FD' by uni07FD.narrow;\012    sub @class1 uni07FD' by uni07FD.wide;\012    sub [uni07CD uni07CD.fina uni07CD.medi] uni07FD' by uni07FD.wideopen;\012    sub @class2 uni07FD' by uni07FD.wider;\012    sub @class3 uni07FD' by uni07FD.widest;\012";
-name = ccmp;
+automatic = 1;
+code = "feature init;\012feature medi;\012feature fina;\012";
+name = aalt;
 },
 {
-automatic = 1;
-code = "sub uni07CA by uni07CA.fina;\012sub uni07CB by uni07CB.fina;\012sub uni07CC by uni07CC.fina;\012sub uni07CD by uni07CD.fina;\012sub uni07CE by uni07CE.fina;\012sub uni07CF by uni07CF.fina;\012sub uni07D0 by uni07D0.fina;\012sub uni07D1 by uni07D1.fina;\012sub uni07D2 by uni07D2.fina;\012sub uni07D3 by uni07D3.fina;\012sub uni07D4 by uni07D4.fina;\012sub uni07D5 by uni07D5.fina;\012sub uni07D6 by uni07D6.fina;\012sub uni07D7 by uni07D7.fina;\012sub uni07D8 by uni07D8.fina;\012sub uni07D9 by uni07D9.fina;\012sub uni07DA by uni07DA.fina;\012sub uni07DB by uni07DB.fina;\012sub uni07DC by uni07DC.fina;\012sub uni07DD by uni07DD.fina;\012sub uni07DE by uni07DE.fina;\012sub uni07DF by uni07DF.fina;\012sub uni07E0 by uni07E0.fina;\012sub uni07E1 by uni07E1.fina;\012sub uni07E2 by uni07E2.fina;\012sub uni07E3 by uni07E3.fina;\012sub uni07E4 by uni07E4.fina;\012sub uni07E5 by uni07E5.fina;\012sub uni07E6 by uni07E6.fina;\012sub uni07E7 by uni07E7.fina;\012sub uni07E8 by uni07E8.fina;\012sub uni07E9 by uni07E9.fina;\012sub uni07EA by uni07EA.fina;\012";
-name = fina;
+code = "    lookupflag UseMarkFilteringSet @dantayalan;\012    sub @narrow uni07FD' by uni07FD.narrow;\012    sub @wide uni07FD' by uni07FD.wide;\012    sub @wideopen uni07FD' by uni07FD.wideopen;\012    sub @wider uni07FD' by uni07FD.wider;\012    sub @widest uni07FD' by uni07FD.widest;\012";
+name = ccmp;
 },
 {
 automatic = 1;
@@ -299,8 +319,17 @@ code = "sub uni07CA by uni07CA.medi;\012sub uni07CB by uni07CB.medi;\012sub uni0
 name = medi;
 },
 {
+automatic = 1;
+code = "sub uni07CA by uni07CA.fina;\012sub uni07CB by uni07CB.fina;\012sub uni07CC by uni07CC.fina;\012sub uni07CD by uni07CD.fina;\012sub uni07CE by uni07CE.fina;\012sub uni07CF by uni07CF.fina;\012sub uni07D0 by uni07D0.fina;\012sub uni07D1 by uni07D1.fina;\012sub uni07D2 by uni07D2.fina;\012sub uni07D3 by uni07D3.fina;\012sub uni07D4 by uni07D4.fina;\012sub uni07D5 by uni07D5.fina;\012sub uni07D6 by uni07D6.fina;\012sub uni07D7 by uni07D7.fina;\012sub uni07D8 by uni07D8.fina;\012sub uni07D9 by uni07D9.fina;\012sub uni07DA by uni07DA.fina;\012sub uni07DB by uni07DB.fina;\012sub uni07DC by uni07DC.fina;\012sub uni07DD by uni07DD.fina;\012sub uni07DE by uni07DE.fina;\012sub uni07DF by uni07DF.fina;\012sub uni07E0 by uni07E0.fina;\012sub uni07E1 by uni07E1.fina;\012sub uni07E2 by uni07E2.fina;\012sub uni07E3 by uni07E3.fina;\012sub uni07E4 by uni07E4.fina;\012sub uni07E5 by uni07E5.fina;\012sub uni07E6 by uni07E6.fina;\012sub uni07E7 by uni07E7.fina;\012sub uni07E8 by uni07E8.fina;\012sub uni07E9 by uni07E9.fina;\012sub uni07EA by uni07EA.fina;\012";
+name = fina;
+},
+{
 code = "# Automatic Code Start\012";
 name = mark;
+},
+{
+code = "pos @isolates' lookup kern_dantayalan_left @dantayalan uni07F8;\012\012# Produced with:\012#for glyphname in Glyphs.font.classes[\"isolates\"].code.split():\012#	glyph = Glyphs.font.glyphs[glyphname]\012#	anchor = glyph.layers[0].anchors[\"Anchor6\"]\012#	if not anchor:\012#		continue\012#	anchor_x = glyph.layers[0].width - anchor.position.x\012#	# Which dantayalan?\012#	dantayalan = \"uni07FD\"\012#	for kind in [\"narrow\", \"wide\", \"wideopen\", \"wider\", \"widest\"]:\012#		if glyphname in Glyphs.font.classes[kind].code:\012#			dantayalan = \"uni07FD.\"+kind\012#	target = Glyphs.font.glyphs[dantayalan].layers[0].RSB\012#	kern = int(-(anchor_x + target) + 50)\012#	print(f\"pos uni07F8' <{kern} 0 {kern} 0> {glyphname} @dantayalan;\")\012pos uni07F8' <67 0 67 0> uni07CA @dantayalan;\012pos uni07F8' <30 0 30 0> uni07CB @dantayalan;\012pos uni07F8' <91 0 91 0> uni07CC @dantayalan;\012pos uni07F8' <88 0 88 0> uni07CD @dantayalan;\012pos uni07F8' <12 0 12 0> uni07CE @dantayalan;\012pos uni07F8' <14 0 14 0> uni07CF @dantayalan;\012pos uni07F8' <37 0 37 0> uni07D0 @dantayalan;\012pos uni07F8' <48 0 48 0> uni07D1 @dantayalan;\012pos uni07F8' <16 0 16 0> uni07D2 @dantayalan;\012pos uni07F8' <50 0 50 0> uni07D3 @dantayalan;\012pos uni07F8' <30 0 30 0> uni07D4 @dantayalan;\012pos uni07F8' <35 0 35 0> uni07D5 @dantayalan;\012pos uni07F8' <60 0 60 0> uni07D6 @dantayalan;\012pos uni07F8' <75 0 75 0> uni07D7 @dantayalan;\012pos uni07F8' <14 0 14 0> uni07D8 @dantayalan;\012pos uni07F8' <54 0 54 0> uni07D9 @dantayalan;\012pos uni07F8' <35 0 35 0> uni07DA @dantayalan;\012pos uni07F8' <56 0 56 0> uni07DB @dantayalan;\012pos uni07F8' <72 0 72 0> uni07DC @dantayalan;\012pos uni07F8' <43 0 43 0> uni07DD @dantayalan;\012pos uni07F8' <32 0 32 0> uni07DE @dantayalan;\012pos uni07F8' <23 0 23 0> uni07DF @dantayalan;\012pos uni07F8' <48 0 48 0> uni07E0 @dantayalan;\012pos uni07F8' <72 0 72 0> uni07E1 @dantayalan;\012pos uni07F8' <28 0 28 0> uni07E2 @dantayalan;\012pos uni07F8' <32 0 32 0> uni07E3 @dantayalan;\012pos uni07F8' <32 0 32 0> uni07E4 @dantayalan;\012pos uni07F8' <46 0 46 0> uni07E5 @dantayalan;\012pos uni07F8' <48 0 48 0> uni07E6 @dantayalan;\012pos uni07F8' <44 0 44 0> uni07E7 @dantayalan;\012pos uni07F8' <136 0 136 0> uni07E8 @dantayalan;\012pos uni07F8' <131 0 131 0> uni07E9 @dantayalan;\012pos uni07F8' <4 0 4 0> uni07EA @dantayalan;\012";
+name = kern;
 }
 );
 fontMaster = (
@@ -1316,7 +1345,7 @@ subCategory = Other;
 {
 glyphname = uni07CC;
 production = uni07CC;
-lastChange = "2019-09-06 15:22:42 +0000";
+lastChange = "2023-05-05 09:56:16 +0000";
 layers = (
 {
 anchors = (
@@ -1330,7 +1359,7 @@ position = "{219, -49}";
 },
 {
 name = Anchor6;
-position = "{218, -49}";
+position = "{219, -49}";
 }
 );
 layerId = UUID0;
@@ -1374,7 +1403,7 @@ subCategory = Other;
 {
 glyphname = uni07CD;
 production = uni07CD;
-lastChange = "2019-09-06 15:22:42 +0000";
+lastChange = "2023-05-05 10:17:28 +0000";
 layers = (
 {
 anchors = (
@@ -1384,7 +1413,7 @@ position = "{312, 649}";
 },
 {
 name = Anchor4;
-position = "{312, -49}";
+position = "{309, -155}";
 },
 {
 name = Anchor6;
@@ -4027,7 +4056,7 @@ subCategory = Other;
 {
 glyphname = uni07F8;
 production = uni07F8;
-lastChange = "2019-09-06 15:18:40 +0000";
+lastChange = "2023-05-05 09:00:39 +0000";
 layers = (
 {
 layerId = UUID0;
@@ -4855,7 +4884,7 @@ subCategory = Other;
 {
 glyphname = uni07CD.medi;
 production = uni07CD.medi;
-lastChange = "2019-09-06 15:22:42 +0000";
+lastChange = "2023-05-05 10:17:10 +0000";
 layers = (
 {
 anchors = (
@@ -12800,7 +12829,7 @@ subCategory = Space;
 {
 glyphname = uni07FD;
 production = uni07FD;
-lastChange = "2019-09-06 15:22:32 +0000";
+lastChange = "2023-05-05 09:01:35 +0000";
 layers = (
 {
 anchors = (
@@ -12842,6 +12871,8 @@ nodes = (
 width = 0;
 }
 );
+leftKerningGroup = dantayalan;
+rightKerningGroup = dantayalan;
 unicode = 07FD;
 script = "";
 category = Mark;
@@ -13001,7 +13032,7 @@ subCategory = Other;
 {
 glyphname = uni07FD.narrow;
 production = uni07FD.narrow;
-lastChange = "2019-09-06 15:22:32 +0000";
+lastChange = "2023-05-05 09:00:05 +0000";
 layers = (
 {
 anchors = (
@@ -13043,6 +13074,8 @@ nodes = (
 width = 0;
 }
 );
+leftKerningGroup = dantayalan;
+rightKerningGroup = dantayalan;
 script = "";
 category = Mark;
 subCategory = Nonspacing;
@@ -13050,7 +13083,7 @@ subCategory = Nonspacing;
 {
 glyphname = uni07FD.wide;
 production = uni07FD.wide;
-lastChange = "2019-09-06 15:22:32 +0000";
+lastChange = "2023-05-05 09:00:05 +0000";
 layers = (
 {
 anchors = (
@@ -13092,6 +13125,8 @@ nodes = (
 width = 0;
 }
 );
+leftKerningGroup = dantayalan;
+rightKerningGroup = dantayalan;
 script = "";
 category = Mark;
 subCategory = Nonspacing;
@@ -13099,7 +13134,7 @@ subCategory = Nonspacing;
 {
 glyphname = uni07FD.wideopen;
 production = uni07FD.wideopen;
-lastChange = "2019-09-06 15:22:32 +0000";
+lastChange = "2023-05-05 10:28:00 +0000";
 layers = (
 {
 anchors = (
@@ -13113,29 +13148,29 @@ paths = (
 {
 closed = 1;
 nodes = (
-"278 -97 LINE",
-"278 0 LINE",
-"271 15 LINE",
-"184 15 LINE",
-"182 0 LINE",
-"210 -97 LINE"
+"348 -99 LINE",
+"348 80 LINE",
+"341 95 LINE",
+"234 95 LINE",
+"280 -99 LINE"
 );
 },
 {
 closed = 1;
 nodes = (
-"-182 0 LINE",
-"-184 15 LINE",
-"-271 15 LINE",
-"-278 0 LINE",
-"-278 -97 LINE",
-"-210 -97 LINE"
+"-234 95 LINE",
+"-341 95 LINE",
+"-348 80 LINE",
+"-348 -99 LINE",
+"-280 -99 LINE"
 );
 }
 );
 width = 0;
 }
 );
+leftKerningGroup = dantayalan;
+rightKerningGroup = dantayalan;
 script = "";
 category = Mark;
 subCategory = Nonspacing;
@@ -13143,7 +13178,7 @@ subCategory = Nonspacing;
 {
 glyphname = uni07FD.wider;
 production = uni07FD.wider;
-lastChange = "2019-09-06 15:22:32 +0000";
+lastChange = "2023-05-05 09:00:05 +0000";
 layers = (
 {
 anchors = (
@@ -13185,6 +13220,8 @@ nodes = (
 width = 0;
 }
 );
+leftKerningGroup = dantayalan;
+rightKerningGroup = dantayalan;
 script = "";
 category = Mark;
 subCategory = Nonspacing;
@@ -13192,7 +13229,7 @@ subCategory = Nonspacing;
 {
 glyphname = uni07FD.widest;
 production = uni07FD.widest;
-lastChange = "2019-09-06 15:22:32 +0000";
+lastChange = "2023-05-05 09:00:05 +0000";
 layers = (
 {
 anchors = (
@@ -13234,6 +13271,8 @@ nodes = (
 width = 0;
 }
 );
+leftKerningGroup = dantayalan;
+rightKerningGroup = dantayalan;
 script = "";
 category = Mark;
 subCategory = Nonspacing;
