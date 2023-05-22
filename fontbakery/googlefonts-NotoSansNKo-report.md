@@ -1082,8 +1082,8 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-short-s
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 3 | 6 | 120 | 8 | 108 | 0 |
-| 0% | 1% | 2% | 49% | 3% | 44% | 0% |
+| 0 | 3 | 6 | 119 | 7 | 110 | 0 |
+| 0% | 1% | 2% | 49% | 3% | 45% | 0% |
 
 **Note:** The following loglevels were omitted in this report:
 * **SKIP**
