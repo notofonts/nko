@@ -1,5 +1,5 @@
 {
-.appVersion = "3151";
+.appVersion = "3200";
 DisplayStrings = (
 "/uni07F5/uni07F4/uni060C",
 "/uni07FF",
@@ -376,7 +376,7 @@ value = 0;
 },
 {
 name = winAscent;
-value = 1069;
+value = 1095;
 },
 {
 name = winDescent;
@@ -439,7 +439,7 @@ value = 0;
 },
 {
 name = winAscent;
-value = 1069;
+value = 1095;
 },
 {
 name = winDescent;
@@ -471,7 +471,6 @@ horizontalStems = (
 0
 );
 id = "5CC93C4E-FA8C-4E3E-9B84-75CB4EA795AB";
-name = Bold;
 userData = {
 GSExtrudeAngle = 30;
 GSExtrudeOffset = 15;
@@ -482,7 +481,7 @@ GSOffsetVertical = 20;
 verticalStems = (
 120
 );
-weight = "";
+weight = Bold;
 weightValue = 130;
 xHeight = 533;
 }
