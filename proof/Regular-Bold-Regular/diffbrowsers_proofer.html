@@ -5,6 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>GFR - Proofer</title>
     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <style type="text/css">
     
 
@@ -145,16 +146,16 @@
 
 	  
 	    @font-face{
-    src: url(NotoSansNKoUnjoined-Regular.ttf);
-    font-family: "Noto Sans NKo Unjoined";
+    src: url(NotoSansNKo-Regular.ttf);
+    font-family: "Noto Sans NKo";
     font-weight: 400;
     
     font-style: normal;
 }
 	  
 	    @font-face{
-    src: url(NotoSansNKo-Regular.ttf);
-    font-family: "Noto Sans NKo";
+    src: url(NotoSansNKoUnjoined-Regular.ttf);
+    font-family: "Noto Sans NKo Unjoined";
     font-weight: 400;
     
     font-style: normal;
@@ -182,20 +183,20 @@
     font-variation-settings: "wght" 400;
 }
 	  
-	    .Regular{
-    font-family: "Noto Sans NKo Unjoined", "Adobe NotDef";
-    font-weight: 400;
-    
-    font-style: normal;
-    font-variation-settings: "wght" 400;
-}
-	  
 	    .Bold{
     font-family: "Noto Sans NKo Unjoined", "Adobe NotDef";
     font-weight: 700;
     
     font-style: normal;
     font-variation-settings: "wght" 700;
+}
+	  
+	    .Regular{
+    font-family: "Noto Sans NKo Unjoined", "Adobe NotDef";
+    font-weight: 400;
+    
+    font-style: normal;
+    font-variation-settings: "wght" 400;
 }
 	  
 	
@@ -303,17 +304,37 @@
 		fontToggle.addEventListener("click", switchFonts);
 	}
 
-    const divs = document.querySelectorAll('.node');
-    divs.forEach(el => el.addEventListener('click', event => {
-    var children = event.target.querySelectorAll(".node");
-    children.forEach(function(e) {
-        if (e.style.display === "none") {
-            e.style.display = "block";
-        } else {
-            e.style.display = "none";
-        }
-    })
-    }));
+	function render(node, toplevel) {
+		var wrapper = $("<div> </div>");
+		if (!node) { return wrapper }
+		if (Array.isArray(node)) {
+			var before = $("<span/>");
+			before.addClass("attr-before");
+			before.html(" " + node[0] + " ");
+			var after = $("<span/>");
+			after.addClass("attr-after");
+			after.append(node[1]);
+			wrapper.append(before);
+			wrapper.append(after);
+			return wrapper
+		}
+		for (const [key, value] of Object.entries(node)) {
+			var display = $("<div/>");
+			display.addClass("node")
+			if (!toplevel && ! key.match(/^\d+$/)) {
+				display.hide()
+			}
+			display.append(key);
+			display.append(render(value, false).children());
+			wrapper.append(display)
+		}
+		return wrapper
+
+	}
+	$(function() {
+		$("#difftable").append(render(fontdiff, true).children())
+		$(".node").on("click", function(event){ $(this).children().toggle(); event.stopPropagation() })
+	});
     
     
 state = "line-by-line"
