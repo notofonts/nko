@@ -1,9 +1,0 @@
-buildVariable: false
-familyName: Noto Sans NKo
-googleFonts: true
-includeSubsets:
-- from: Noto Sans
-  name: GF_Latin_Core
-recipeProvider: noto
-sources:
-- NotoSansNKo.glyphs
